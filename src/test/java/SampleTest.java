@@ -13,7 +13,6 @@ public void setup() {
     String browser = System.getProperty("browser", "chrome");
     driver = DriverFactory.createDriver(browser);
 }
-
     @Test
     public void openGoogle() {
         driver.get("https://www.google.com");

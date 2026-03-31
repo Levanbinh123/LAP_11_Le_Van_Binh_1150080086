@@ -1,7 +1,3 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package com.test.mavenproject4;
 
 public class ConfigUtil {
@@ -10,7 +6,7 @@ public class ConfigUtil {
         String username = System.getenv("APP_USERNAME");
 
         if (username == null || username.isBlank()) {
-            username = "standard_user"; // dùng khi chạy local
+            throw new RuntimeException("Missing APP_USERNAME environment variable");
         }
         return username;
     }
@@ -19,7 +15,7 @@ public class ConfigUtil {
         String password = System.getenv("APP_PASSWORD");
 
         if (password == null || password.isBlank()) {
-            password = "secret_sauce"; // local fallback
+            throw new RuntimeException("Missing APP_PASSWORD environment variable");
         }
         return password;
     }

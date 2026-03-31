@@ -2,24 +2,24 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-03-31T14:46:38 GMT+07:00" name="Surefire suite" finished-at="2026-03-31T14:46:50 GMT+07:00" duration-ms="12117">
+  <suite started-at="2026-03-31T15:25:06 GMT+07:00" name="Surefire suite" finished-at="2026-03-31T15:25:11 GMT+07:00" duration-ms="4804">
     <groups>
     </groups>
-    <test started-at="2026-03-31T14:46:38 GMT+07:00" name="Surefire test" finished-at="2026-03-31T14:46:50 GMT+07:00" duration-ms="12117">
-      <class name="SampleTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:SampleTest@19bb07ed]" started-at="2026-03-31T14:46:38 GMT+07:00" name="setup" finished-at="2026-03-31T14:46:43 GMT+07:00" duration-ms="5210" status="PASS">
+    <test started-at="2026-03-31T15:25:06 GMT+07:00" name="Surefire test" finished-at="2026-03-31T15:25:11 GMT+07:00" duration-ms="4804">
+      <class name="LoginTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:LoginTest@1622f1b]" started-at="2026-03-31T15:25:06 GMT+07:00" name="setup" finished-at="2026-03-31T15:25:09 GMT+07:00" duration-ms="2973" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="openGoogle()[pri:0, instance:SampleTest@19bb07ed]" started-at="2026-03-31T14:46:43 GMT+07:00" name="openGoogle" finished-at="2026-03-31T14:46:46 GMT+07:00" duration-ms="2391" status="PASS">
+        <test-method signature="loginSuccess()[pri:0, instance:LoginTest@1622f1b]" started-at="2026-03-31T15:25:09 GMT+07:00" name="loginSuccess" finished-at="2026-03-31T15:25:10 GMT+07:00" duration-ms="1501" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- openGoogle -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:SampleTest@19bb07ed]" started-at="2026-03-31T14:46:46 GMT+07:00" name="teardown" finished-at="2026-03-31T14:46:50 GMT+07:00" duration-ms="4414" status="PASS">
+        </test-method> <!-- loginSuccess -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:LoginTest@1622f1b]" started-at="2026-03-31T15:25:10 GMT+07:00" name="teardown" finished-at="2026-03-31T15:25:11 GMT+07:00" duration-ms="290" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-      </class> <!-- SampleTest -->
+      </class> <!-- LoginTest -->
     </test> <!-- Surefire test -->
   </suite> <!-- Surefire suite -->
 </testng-results>

@@ -1,2 +1,4 @@
+com\test\mavenproject4\ConfigUtil.class
+com\test\mavenproject4\pages\LoginPage.class
 com\test\mavenproject4\Mavenproject4.class
 DriverFactory.class
