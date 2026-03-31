@@ -27,6 +27,9 @@ jobs:
 
       - name: Run tests (${{ matrix.browser }})
         run: mvn clean test -Dbrowser=${{ matrix.browser }}
+        env:
+          APP_USERNAME: ${{ secrets.SAUCEDEMO_USERNAME }}
+          APP_PASSWORD: ${{ secrets.SAUCEDEMO_PASSWORD 
 
       - name: Upload results
         if: always()

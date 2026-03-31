@@ -1,4 +1,5 @@
 
+import com.test.mavenproject4.ConfigUtil;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
@@ -23,4 +24,13 @@ public void setup() {
     public void teardown() {
         if (driver != null) driver.quit();
     }
+    @Test
+public void loginTest() {
+    driver.get("https://www.saucedemo.com");
+
+    String username = ConfigUtil.getUsername();
+    String password = ConfigUtil.getPassword();
+
+    // nhập vào form login
+}
 }
