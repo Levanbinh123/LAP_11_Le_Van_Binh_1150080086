@@ -7,10 +7,11 @@ import org.testng.annotations.Test;
 public class SampleTest {
     WebDriver driver;
 
-    @BeforeClass
-    public void setup() {
-        driver = DriverFactory.createDriver("chrome");
-    }
+  @BeforeClass
+public void setup() {
+    String browser = System.getProperty("browser", "chrome");
+    driver = DriverFactory.createDriver(browser);
+}
 
     @Test
     public void openGoogle() {
